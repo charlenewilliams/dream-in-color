@@ -16,9 +16,20 @@
  
 }
 
-img{
+img {
     height: 150px;
+}
+
+.logo {
     
+    -webkit-transform: -webkit-transform 1s;
+
+}
+
+.logo:hover {
+   transition: 0.4s;
+   transform: rotate(360deg);
+   background-color: orange;
 }
 
 nav{
