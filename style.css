@@ -5,19 +5,18 @@
     margin:0;
     font-family: Roboto, sans-serif;
     font-weight: 400;
-  
 
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 .hero {
     height: 100vh;
     width: 100%;
     
 }
-
-
 
 img {
     height: 150px;
@@ -27,7 +26,6 @@ img {
     
     -webkit-transform: -webkit-transform 1s;
     height: 70px;
-
 
 }
 
@@ -50,8 +48,6 @@ nav {
     z-index: 2;
     width: 100%;
     transition: 0.5s;
-
-   
 
 }
 
@@ -254,7 +250,6 @@ nav ul li a:hover {
 .header-btn span:nth-child(13) {
     top: -40%;
     left: 90%;
-   
 
 }
 
@@ -350,6 +345,11 @@ nav ul li a:hover {
     
 }
 
+.text {
+    color: orange;
+    font-family: cursive;
+}
+
 a {
     font-weight: 900;
     font-size: 20px;
@@ -371,9 +371,29 @@ a {
         
     }
 
+        .icon {
+        background: #e91e63;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 150px;
+        cursor: pointer;
+        margin-top: 150px;
+        margin-left: 50px;
+        
+        }
+
+     .icon img {
+     width: 15px;
+     height: auto; 
+     
+    }
+    
     .section-one {
         background-color: #fff;
-        
         
 
     }
@@ -396,6 +416,8 @@ a {
         display: flex;
         flex-direction: column;
         width: 100%;
+        position: relative;
+        z-index: 2;
     }
 
     .card-wrapper-inner {
@@ -409,16 +431,21 @@ a {
     }
 
     p{
-        padding-top: 20px;
+    padding-top: 20px;
     }
  
 .section-two {
-
+    position: relative;
     height: 350px;
     background-color: orange;
+    opacity: 0.7;
     width: 100%;
-}
+    -webkit-box-shadow: -1px -2px 14px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -2px 14px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -2px 14px 3px rgba(0, 0, 0, 0.75);
+    z-index: 9;
   
+}
 
 blockquote {
     padding-top: 70px;
@@ -455,8 +482,9 @@ blockquote::after {
 .bubbles {
     position: absolute;
     display: flex;
- 
+    z-index: 2;
     
+   
 
 }
 
@@ -465,7 +493,6 @@ blockquote::after {
     box-shadow: 0 0 0 10px #ff2d7544,
     0 0 50px #4fc3dc
     0 0 100px #4fc3dc;
-    
     
 }
 
@@ -477,13 +504,12 @@ blockquote::after {
     background: #ff1876;
     margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 00010px #4fc3dc44, 
+    box-shadow: 0 0 0 10px #4fc3dc44, 
     0 0 50px #4fc3dc,
     0 0 100px #4fc3dc;
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
    
-    
 
 }
 
@@ -555,7 +581,6 @@ footer {
     background-color:#000942;
     color: #fff;
     text-align: center;
-}
 
 .heart {
    color:#ff1876;
